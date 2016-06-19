@@ -16,19 +16,25 @@ class BankAccount implements IfaceBankAccount
     }
 
     public function deposit(Money $amount)
+
     {
-        //implement this method
+
+         $this->balance = $amount;
+
     }
 
     public function withdraw(Money $amount)
 
     {
 
+        $this->balance=$amount;
 
      }
 
     public function transfer(Money $amount, BankAccount $account)
     {
-        //implement this method
+
+        $this->balance=$amount;
+       
     }
 }
